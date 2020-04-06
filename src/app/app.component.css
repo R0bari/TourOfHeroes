@@ -1,0 +1,10 @@
+.title{
+    cursor: pointer;
+}
+button{
+    margin-left: 10px;
+    height: 30px;
+}
+button p{
+    margin-top: -5px;
+}

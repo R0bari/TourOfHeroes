@@ -1,0 +1,19 @@
+<div id="search-component">
+    <h4><label for="search-box">Hero Search</label></h4>
+  
+    <input #searchBox id="search-box" class="form-control"
+    (input)="search(searchBox.value)" />
+    
+    <br>
+    <ul class="search-result list-group">
+      <h4 *ngIf=searchBox.value>Search Result:</h4>
+      <li class="list-group-item" *ngFor="let hero of heroes$ | async" >
+        <a routerLink="/detail/{{hero.id}}">
+          {{hero.name}}
+        </a>
+      </li>
+      <!-- <li class="list-group-item" *ngIf="heroes$.length">
+        ПУСТО
+      </li> -->
+    </ul>
+  </div>

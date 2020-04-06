@@ -1,0 +1,24 @@
+.hero-block{
+  display: inline-block;
+  margin: 0 2.5% 15px 2.5%;
+  padding: 15px 25px 15px 25px;
+  width: 20%;
+  min-width: 200px;
+  background-color: inherit;
+  color: rgb(96,125,139);
+  border: 2px solid rgb(96,125,139);
+  border-radius: 5px;
+  text-align: center;
+}
+.hero-block:hover{
+  background-color: rgb(96,125,139);
+  color:  rgb(255, 243, 205);
+}
+a{
+  text-decoration: none;
+}
+@media (max-width: 520px){
+  .hero-block{
+    width: 90%;
+  }
+}

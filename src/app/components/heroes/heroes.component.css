@@ -1,0 +1,42 @@
+.list-group-item{
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list-group-item:hover{
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+.heroes li.selected {
+  background-color: rgb(162, 198, 214);
+  color: white;
+}
+.heroes li.selected:hover {
+  background-color: #BBD8DC;
+  color: white;
+}
+.heroes li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+}
+.heroes li:hover button{
+  display: inline-block;
+}
+.badge{
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+  color: rgb(133, 100, 4);
+}
+.btn-delete-hero{
+  height: 25px;
+  float: right;
+  display: none;
+}
+.btn-delete-hero p{
+  margin-top: -5px;
+}
+h2{
+    cursor: default;
+}

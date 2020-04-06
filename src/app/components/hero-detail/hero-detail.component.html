@@ -1,0 +1,16 @@
+<div *ngIf="hero">
+    <div class="container">
+
+      <div class="alert alert-warning">
+        <h2>{{hero.name | uppercase}} Details</h2>
+        <div><span>id: {{hero.id}}</span></div>
+        <div>
+          <label>name:
+            <input type="text" class="form-group"[(ngModel)]="hero.name" placeholder="name"/>
+          </label>
+        </div>
+        <button class="btn btn-danger" (click)="goBack()">Back</button>
+        <button class="btn btn-success ml-4" (click)="save()">Save</button>
+      </div>
+    </div>
+</div>

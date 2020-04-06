@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="alert alert-warning">
+        
+      <h2>My Heroes</h2>
+
+      <div class="form-group">
+        <input #heroName placeholder="Новый герой"
+        class="form-control mb-2" #option>
+        <button type="submit" class="btn btn-outline-success"
+        (click)="add(heroName.value); heroName.value=''">Добавить</button>
+      </div>
+      
+      <ul class="heroes list-group">
+        <li class="list-group-item" routerLink="/detail/{{hero.id}}"
+        *ngFor="let hero of heroes">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+        <button class="btn btn-sm btn-outline-danger btn-delete-hero" 
+        (click)="delete(hero)"><p>x</p></button>
+        </li>
+      </ul>
+
+  </div>
+</div>
